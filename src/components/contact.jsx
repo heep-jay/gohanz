@@ -24,7 +24,7 @@ export const Contact = (props) => {
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
     
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_3wvrhu8", "template_mqdyba8", e.target, "9_1sgdFJklkehEa_B")
       .then(
         (result) => {
           console.log(result.text);
@@ -54,8 +54,8 @@ export const Contact = (props) => {
                     <div className="form-group">
                       <input
                         type="text"
-                        id="name"
-                        name="name"
+                        id="from_name"
+                        name="from_name"
                         className="form-control"
                         placeholder="Name"
                         required
